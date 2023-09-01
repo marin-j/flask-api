@@ -21,7 +21,7 @@ spec:
   selector:
     matchLabels:
       app: flask-api
-  replicas: 1
+  replicas: 12
   template:
     metadata:
       labels:
@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: flask-api
-        image: flask-api:latest
+        image: marinjansen098/flask-api:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
