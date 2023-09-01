@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: flask-api
-        image: marinjansen098/flask-api:latest
+        image: marinjansen098/flask-api:0.0.1 
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
